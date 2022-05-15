@@ -8,4 +8,4 @@ def collatz(n):
     else:
         return 1 + collatz(n*3 + 1)
 
-print(collatz(25))
+print(collatz(int(sys.argv[1])))
