@@ -1,5 +1,4 @@
 `include "alu.v"
-`timescale 1ns/10ps
 
 module alu_tb;
     parameter N = 8;

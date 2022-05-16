@@ -1,5 +1,4 @@
 `include "im.v"
-`timescale 1ns/10ps
 
 module im_tb;
     reg [7:0] in;

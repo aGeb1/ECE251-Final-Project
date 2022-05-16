@@ -45,9 +45,8 @@ module datapath;
 
     // testing
     initial begin
-        // $display("clk pc       read1 read2/imm data1    data2    dest  aluout");
-        // $monitor("%1b   %8b %5b %8b  %8b %8b %5b %8b %8b", clk, pcout, instruction[9:5],
-        // instruction[17:10], data1, data2, instruction[4:0], aluout, branchi);
+        // $dumpfile("gtk.vcd");
+        // $dumpvars(0, clk, pcout, instruction, aluout, regwrite, memwrite, rori, aluordm, branch, dmout, branchi);
         $monitor("%8b", finalvalue);
     end
 
