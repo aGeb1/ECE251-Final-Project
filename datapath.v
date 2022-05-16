@@ -45,8 +45,8 @@ module datapath;
 
     // testing
     initial begin
-        // $dumpfile("gtk.vcd");
-        // $dumpvars(0, clk, pcout, instruction, aluout, regwrite, memwrite, rori, aluordm, branch, dmout, branchi);
+        $dumpfile("gtk.vcd");
+        $dumpvars(0, clk, pcout, instruction, aluout, regwrite, memwrite, rori, aluordm, branch, dmout, branchi);
         $monitor("%8b", finalvalue);
     end
 
